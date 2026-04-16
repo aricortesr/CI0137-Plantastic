@@ -6,8 +6,8 @@
       <p class="hero-subtitle">Descubre el poder de las plantas medicinales de Costa Rica. Respaldo científico,
         100% orgánico, cultivado con amor.</p>
       <div class="hero-buttons">
-        <a href="#" class="btn btn-primary">Explorar tienda &rarr;</a>
-        <a href="#" class="btn btn-outline">Guía medicinal</a>
+        <RouterLink to="/tienda" class="btn btn-primary">Explorar tienda &rarr;</RouterLink>
+        <RouterLink to="/guia" class="btn btn-outline">Guía medicinal</RouterLink>
       </div>
     </div>
     <div class="hero-visual">

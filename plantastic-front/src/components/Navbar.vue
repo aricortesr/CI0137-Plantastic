@@ -1,15 +1,15 @@
 <template>
   <nav class="navbar">
-    <a href="#" class="logo">
+    <RouterLink to="/" class="logo">
       <!-- Ajustamos la ruta para que webpack la resuelva correctamente -->
       <img src="../assets/logo.png" alt="Logo Plantastic" style="height: 30px; width: auto;">
       Plantastic
-    </a>
+    </RouterLink>
 
     <ul class="nav-links">
-      <li><a href="#" class="active">Inicio</a></li>
-      <li><a href="#">Tienda</a></li>
-      <li><a href="#">Guía Medicinal</a></li>
+      <li><RouterLink to="/" active-class="active" exact-active-class="active">Inicio</RouterLink></li>
+      <li><RouterLink to="/tienda" active-class="active">Tienda</RouterLink></li>
+      <li><RouterLink to="/guia" active-class="active">Guía Medicinal</RouterLink></li>
       <li><a href="#">Nosotros</a></li>
     </ul>
 
