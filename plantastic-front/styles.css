@@ -713,7 +713,7 @@ a {
   gap: 24px;
 }
 
-.products-grid :deep(.product-card) {
+.products-grid .product-card {
   max-width: 100%;
 }
 
@@ -999,6 +999,8 @@ a {
 
   .guide-cta {
     padding: 60px 18px;
+  }
+}
 
 /* Responsive - Homepage */
 
@@ -1086,7 +1088,7 @@ a {
     justify-content: center;
   }
 
-  .product-card {
+  .products-container .product-card {
     max-width: 45%;
     flex: 0 0 45%;
   }
@@ -1102,6 +1104,94 @@ a {
 
   .conditions-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Tienda */
+  .tienda-hero {
+    min-height: auto;
+    padding: 34px 5%;
+  }
+
+  .tienda-controls {
+    padding: 30px 5% 18px;
+    gap: 16px;
+  }
+
+  .search-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .tienda-products {
+    padding: 8px 5% 54px;
+  }
+
+  .tienda-products .products-grid {
+    max-width: 760px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .tienda-products .products-grid .product-card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* Guía */
+  .guide-page {
+    padding: 26px 5% 0;
+  }
+
+  .guide-hero {
+    padding: 42px 8px;
+  }
+
+  .guide-heading {
+    font-size: 2.3rem;
+  }
+
+  .guide-lead {
+    font-size: 1rem;
+  }
+
+  .guide-stats {
+    gap: 18px;
+    padding: 24px;
+  }
+
+  .stat-value {
+    font-size: 2.4rem;
+  }
+
+  .guide-alert {
+    padding: 14px 16px;
+  }
+
+  .guide-conditions {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .condition-header {
+    padding: 14px;
+  }
+
+  .condition-copy h2 {
+    font-size: 1.55rem;
+  }
+
+  .guide-cta {
+    margin-top: 44px;
+    padding: 56px 16px;
+  }
+
+  .guide-cta h2 {
+    font-size: 2.2rem;
+  }
+
+  .guide-cta p {
+    font-size: 1rem;
   }
 }
 
@@ -1128,7 +1218,7 @@ a {
     display: none;
   }
 
-  .product-card {
+  .products-container .product-card {
     max-width: 100%;
     flex: 0 0 100%;
   }
@@ -1139,5 +1229,132 @@ a {
 
   .section-tag {
     font-size: 0.75rem;
+  }
+
+  /* Tienda */
+  .tienda-hero {
+    padding: 28px 6%;
+  }
+
+  .tienda-controls {
+    padding: 24px 6% 14px;
+  }
+
+  .filter-buttons {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filter-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 11px 14px;
+    font-size: 0.92rem;
+  }
+
+  .search-input {
+    padding: 14px 46px 14px 14px;
+    font-size: 0.95rem;
+  }
+
+  .search-icon {
+    right: 14px;
+    font-size: 1.05rem;
+  }
+
+  .tienda-products {
+    padding: 6px 6% 44px;
+  }
+
+  .tienda-products .products-grid {
+    max-width: 420px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .tienda-products .products-grid .product-card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .results-count {
+    margin-bottom: 22px;
+    font-size: 0.92rem;
+  }
+
+  /* Guía */
+  .guide-page {
+    padding: 22px 6% 0;
+  }
+
+  .guide-hero {
+    padding: 34px 4px;
+  }
+
+  .guide-heading {
+    font-size: 1.9rem;
+    line-height: 1.15;
+  }
+
+  .guide-stats {
+    padding: 18px;
+  }
+
+  .stat-value {
+    font-size: 2.1rem;
+  }
+
+  .guide-alert {
+    gap: 10px;
+    padding: 12px 14px;
+  }
+
+  .alert-icon {
+    font-size: 1.2rem;
+  }
+
+  .condition-left {
+    gap: 10px;
+  }
+
+  .condition-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 1.15rem;
+  }
+
+  .condition-copy h2 {
+    font-size: 1.3rem;
+  }
+
+  .condition-copy p {
+    font-size: 0.84rem;
+  }
+
+  .condition-toggle {
+    font-size: 1.7rem;
+  }
+
+  .plant-copy h3 {
+    font-size: 1rem;
+  }
+
+  .plant-copy p {
+    font-size: 0.84rem;
+  }
+
+  .guide-cta {
+    margin-top: 36px;
+    padding: 48px 16px;
+  }
+
+  .guide-cta h2 {
+    font-size: 1.8rem;
+  }
+
+  .guide-cta p {
+    font-size: 0.98rem;
   }
 }
