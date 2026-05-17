@@ -1,0 +1,128 @@
+.productos-destacados {
+  padding: 60px 10%;
+  background-color: var(--color-background);
+}
+
+.section-title {
+  font-size: 2.8rem;
+  color: var(--color-text-dark);
+  text-align: center;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.products-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.product-card {
+  flex: 1;
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.product-image-container {
+  background-color: var(--color-circle);
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.product-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--color-navbar-green);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.product-icon {
+  font-size: 3.5rem;
+}
+
+.product-info {
+  padding: 25px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-category {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.product-title {
+  font-size: 1.3rem;
+  color: var(--color-text-dark);
+  margin: 0 0 10px 0;
+  font-weight: 400;
+}
+
+.product-desc {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 25px;
+  flex: 1;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  color: var(--color-bosque);
+  font-size: 1.1rem;
+}
+
+.view-all-container {
+  text-align: center;
+  margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .productos-destacados {
+    padding: 40px 5%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .products-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .products-container .product-card {
+    max-width: 45%;
+    flex: 0 0 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-container .product-card {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .section-tag {
+    font-size: 0.75rem;
+  }
+}

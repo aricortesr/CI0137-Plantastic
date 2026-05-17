@@ -1,0 +1,17 @@
+:root {
+  --color-navbar-green: #163827;
+  --color-salvia: #78A882;
+  --color-bosque: #163827;
+  --color-crema: #EDE8DC;
+  --color-grafito: #747474;
+  --color-background: #FFFBF2;
+  --color-circle: #D5EBCE;
+  --color-text-dark: #1A1A1A;
+  --color-text-heading: #24272b;
+  --font-principal: 'Figtree', sans-serif;
+  --font-serif: 'Georgia', serif;
+  --shadow-card: 0 4px 15px #e3e3e3;
+  --shadow-card-hover: 0 12px 45px #e3e3e3;
+  --icon-circle-bg: rgba(120, 168, 130, 0.24);
+  --transition-default: 0.2s ease;
+}

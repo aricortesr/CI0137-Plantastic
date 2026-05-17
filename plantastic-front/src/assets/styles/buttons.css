@@ -1,0 +1,113 @@
+.btn {
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all var(--transition-default);
+  border: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--color-navbar-green);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-bosque);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--color-navbar-green);
+  color: var(--color-navbar-green);
+}
+
+.btn-outline:hover {
+  background-color: rgba(22, 56, 39, 0.05);
+}
+
+.btn-white {
+  background-color: var(--color-crema);
+  color: var(--color-navbar-green);
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color var(--transition-default), color var(--transition-default);
+}
+
+.btn-white:hover {
+  background-color: var(--color-salvia);
+}
+
+.add-to-cart-btn {
+  background-color: var(--color-navbar-green);
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color var(--transition-default);
+  border: none;
+}
+
+.add-to-cart-btn:hover {
+  background-color: var(--color-bosque);
+}
+
+.condition-pill {
+  background-color: rgba(237, 232, 220, 0.1);
+  border: 1px solid rgba(237, 232, 220, 0.15);
+  color: var(--color-crema);
+  padding: 16px 20px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.condition-pill:hover {
+  background-color: rgba(237, 232, 220, 0.2);
+  transform: translateY(-2px);
+  border-color: rgba(237, 232, 220, 0.3);
+}
+
+.filter-btn {
+  background: #fff;
+  color: var(--color-bosque);
+  border: 2px solid rgba(116, 116, 116, 0.25);
+  border-radius: 999px;
+  padding: 12px 22px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all var(--transition-default);
+}
+
+.filter-btn-active {
+  background: var(--color-bosque);
+  color: #ede8dc;
+  border-color: var(--color-bosque);
+}
+
+.guide-cta-button {
+  display: inline-block;
+  background: var(--color-bosque);
+  color: var(--color-crema);
+  border-radius: 6px;
+  padding: 13px 22px;
+  font-weight: 600;
+  text-decoration: none;
+}
