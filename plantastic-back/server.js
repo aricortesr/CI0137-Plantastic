@@ -1,6 +1,8 @@
+require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 const session = require('express-session')
+const sessionMiddleware = require('./config/session')
 const usersRouter = require('./routes/users')
 const cartRouter = require('./routes/cart')
 
@@ -11,13 +13,8 @@ app.use(cors({
   origin: 'http://localhost:8080',
   credentials: true
 }))
-app.use(session({
-  secret: 'plantastic-secret-key',
-  resave: false,
-  saveUninitialized: false,
-  cookie: { httpOnly: true, sameSite: 'lax' }
-}))
 app.use(express.json())
+app.use(sessionMiddleware)
 
 app.use('/api/users', usersRouter)
 app.use('/api/cart', cartRouter)
