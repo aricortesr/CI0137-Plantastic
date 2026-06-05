@@ -13,29 +13,37 @@ NODE_ENV=development
 SESSION_MAX_AGE=3600000
 ```
 
----
+## Dependencias Node.js
+
+Las dependencias del backend (incluyendo `redis` y `connect-redis`) se instalan automáticamente con:
+
+```
+npm install
+```
+
+Esto funciona igual en Windows, Mac y Linux. Lo único que requiere instalación manual es el **servidor Redis**, descrito a continuación.
 
 ## Instalación de Redis
 
 ### Debian / Ubuntu / Linux Mint
-```bash
+```
 sudo apt update
 sudo apt install redis-server
 ```
 
 ### Fedora
-```bash
+```
 sudo dnf install redis
 ```
 
 ### macOS
-```bash
+```
 brew install redis
 ```
 
 ### Windows
 Redis no tiene soporte oficial en Windows. Se recomienda usar Docker:
-```bash
+```
 docker run -d -p 6379:6379 redis
 ```
 O bien instalar WSL (Windows Subsystem for Linux) y seguir los pasos de Debian dentro de WSL.
@@ -45,14 +53,14 @@ O bien instalar WSL (Windows Subsystem for Linux) y seguir los pasos de Debian d
 ## Iniciar el servidor Redis
 
 ### Linux / macOS
-```bash
+```
 sudo systemctl start redis-server   # Debian/Ubuntu/Mint
 sudo systemctl start redis          # Fedora
 brew services start redis           # macOS
 ```
 
 Para verificar que Redis está corriendo:
-```bash
+```
 redis-cli ping
 # Debe responder: PONG
 ```
@@ -64,7 +72,7 @@ El contenedor de Docker inicia Redis automáticamente al ejecutar el comando de 
 
 ## Iniciar el backend
 
-```bash
+```
 npm run start
 ```
 
@@ -72,7 +80,7 @@ npm run start
 
 ## Comandos útiles de Redis
 
-```bash
+```
 sudo systemctl stop redis-server      # Detener Redis
 sudo systemctl restart redis-server   # Reiniciar Redis
 sudo systemctl status redis-server    # Ver estado
