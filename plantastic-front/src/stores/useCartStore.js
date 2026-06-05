@@ -19,7 +19,9 @@ export const useCartStore = defineStore('cart', () => {
   }
 
   async function fetchCart() {
-    const res = await fetch('/api/cart')
+    const res = await fetch('/api/cart', {
+      credentials: 'include'
+    })
     if (res.status === 401) { router.push('/login'); return }
     if (res.ok) updateState(await res.json())
   }
@@ -28,6 +30,7 @@ export const useCartStore = defineStore('cart', () => {
     const res = await fetch('/api/cart/add', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
+      credentials: 'include',
       body: JSON.stringify({
         id: producto.id,
         name: producto.name,
@@ -44,6 +47,7 @@ export const useCartStore = defineStore('cart', () => {
     const res = await fetch('/api/cart/update', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
+      credentials: 'include',
       body: JSON.stringify({ id, quantity })
     })
     if (res.status === 401) { router.push('/login'); return }
@@ -51,13 +55,19 @@ export const useCartStore = defineStore('cart', () => {
   }
 
   async function removeItem(id) {
-    const res = await fetch(`/api/cart/item/${id}`, { method: 'DELETE' })
+    const res = await fetch(`/api/cart/item/${id}`, {
+      method: 'DELETE',
+      credentials: 'include',
+    })
     if (res.status === 401) { router.push('/login'); return }
     if (res.ok) updateState(await res.json())
   }
 
   async function clearCart() {
-    const res = await fetch('/api/cart', { method: 'DELETE' })
+    const res = await fetch('/api/cart', {
+      method: 'DELETE',
+      credentials: 'include'
+    })
     if (res.ok) updateState(await res.json())
   }
 
