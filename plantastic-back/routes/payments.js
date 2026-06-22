@@ -198,9 +198,9 @@ router.post('/', async (req, res) => {
       })
     }
 
-    if (req.session) {
-      req.session.cart = []
-    }
+    // if (req.session) {
+    //   req.session.cart = []
+    // }
 
     return res.status(200).json({
       flag: 'approved',
