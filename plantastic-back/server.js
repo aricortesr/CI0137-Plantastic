@@ -16,6 +16,8 @@ const allowedOrigins = process.env.ALLOWED_ORIGINS
   ? process.env.ALLOWED_ORIGINS.split(',').map(o => o.trim())
   : ['http://localhost:8080']
 
+app.set('trust proxy', 1);
+
 app.use(helmet())
 
 app.use(cors({

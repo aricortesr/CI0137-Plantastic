@@ -177,7 +177,7 @@ router.post('/', async (req, res) => {
       reasons.push('La moneda debe ser colones o dólares.')
     }
 
-    if (Number.isFinite(amount) && amount <= 0) {
+    if (Number.isFinite(amount) || amount <= 0) {
       reasons.push('El monto debe ser mayor que cero.')
     }
 
